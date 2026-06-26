@@ -1,18 +1,31 @@
-Base Skeleton to start your application using Flask-AppBuilder
---------------------------------------------------------------
+Sistema de Tienda Online
+========================
 
-- Install it::
+Segundo Parcial
 
-	pip install flask-appbuilder
-	git clone https://github.com/dpgaspar/Flask-AppBuilder-Skeleton.git
+Descripción
+-----------
+Sistema web desarrollado con Flask y Flask-AppBuilder para la gestión de una tienda online.
 
-- Run it::
+Funciones
+---------
+- Gestión de Categorías
+- Gestión de Proveedores
+- Gestión de Productos
+- Gestión de Clientes
+- Gestión de Pedidos
+- Reportes
+- Gráficas estadísticas
 
-    $ export FLASK_APP=app
-    # Create an admin user
-    $ flask fab create-admin
-    # Run dev server
-    $ flask run
+Tecnologías
+-----------
+- Python
+- Flask
+- Flask-AppBuilder
+- MySQL
+- Bootstrap
 
-
-That's it!!
+Autor
+-----
+Ronaldo Torrico
+Universidad UAB
