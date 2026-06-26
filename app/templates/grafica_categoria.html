@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos por Categoría</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Productos por Categoría</h2>
+
+<canvas id="grafica"></canvas>
+
+<script>
+const ctx = document.getElementById('grafica');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: {{ etiquetas|tojson }},
+        datasets: [{
+            label: 'Productos',
+            data: {{ valores|tojson }}
+        }]
+    }
+});
+</script>
+
+</body>
+</html>

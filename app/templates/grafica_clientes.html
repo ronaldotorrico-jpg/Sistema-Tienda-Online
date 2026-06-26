@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clientes Registrados</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Clientes Registrados</h2>
+
+<canvas id="grafica"></canvas>
+
+<script>
+
+const ctx = document.getElementById('grafica');
+
+new Chart(ctx,{
+    type:'bar',
+    data:{
+        labels:['Clientes'],
+        datasets:[{
+            label:'Cantidad',
+            data:[{{ total }}]
+        }]
+    }
+});
+
+</script>
+
+</body>
+</html>

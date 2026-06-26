@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos por Cliente</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Pedidos por Cliente</h2>
+
+<canvas id="grafica"></canvas>
+
+<script>
+const ctx = document.getElementById('grafica');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: {{ etiquetas|tojson }},
+        datasets: [{
+            label: 'Pedidos',
+            data: {{ valores|tojson }},
+            backgroundColor: [
+                '#3498db',
+                '#2ecc71',
+                '#f39c12',
+                '#e74c3c',
+                '#9b59b6'
+            ]
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+</script>
+
+</body>
+</html>
